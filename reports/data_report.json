@@ -1,0 +1,21 @@
+{
+  "rows_initial": 50425,
+  "removed_missing_label": 0,
+  "removed_missing_text": 1,
+  "unexpected_labels": {},
+  "removed_unexpected_label": 0,
+  "removed_exact_duplicates": 22622,
+  "removed_empty_after_cleaning": 0,
+  "removed_duplicates_after_cleaning": 93,
+  "removed_conflicting_labels": 0,
+  "rows_final": 27709,
+  "rows_removed_total": 22716,
+  "percent_removed": 45.05,
+  "class_counts_final": {
+    "Household": 10558,
+    "Books": 6202,
+    "Clothing & Accessories": 5647,
+    "Electronics": 5302
+  },
+  "missing_categories": []
+}

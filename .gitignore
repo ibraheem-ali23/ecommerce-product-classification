@@ -1,0 +1,22 @@
+# Environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+.streamlit/secrets.toml
+
+# Credentials - never commit
+kaggle.json
+.env
+
+# Large dataset (download it, see data/README.md)
+data/*.csv
+data/*.part
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

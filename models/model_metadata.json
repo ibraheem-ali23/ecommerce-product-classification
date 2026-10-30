@@ -1,0 +1,25 @@
+{
+  "saved_at_utc": "2026-10-23T12:31:29+00:00",
+  "sklearn_version": "1.9.1",
+  "classes": [
+    "Books",
+    "Clothing & Accessories",
+    "Electronics",
+    "Household"
+  ],
+  "model_name": "Linear SVM",
+  "selection_metric": "f1_macro",
+  "test_metrics": {
+    "accuracy": 0.9592,
+    "precision_macro": 0.9605,
+    "recall_macro": 0.9572,
+    "f1_macro": 0.9588,
+    "precision_weighted": 0.9593,
+    "recall_weighted": 0.9592,
+    "f1_weighted": 0.9592,
+    "fit_seconds": 10.1
+  },
+  "random_seed": 42,
+  "dataset_file": "ecommerceDataset.csv",
+  "rows_used": 27709
+}

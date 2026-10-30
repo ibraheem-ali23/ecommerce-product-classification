@@ -1,0 +1,12 @@
+Model: Logistic Regression
+
+                        precision    recall  f1-score   support
+
+           Electronics     0.9499    0.9302    0.9399      1060
+             Household     0.9495    0.9702    0.9597      2112
+                 Books     0.9638    0.9428    0.9532      1241
+Clothing & Accessories     0.9770    0.9796    0.9783      1129
+
+              accuracy                         0.9583      5542
+             macro avg     0.9600    0.9557    0.9578      5542
+          weighted avg     0.9584    0.9583    0.9583      5542
