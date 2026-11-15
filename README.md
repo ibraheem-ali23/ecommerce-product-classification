@@ -243,3 +243,15 @@ The suite covers text cleaning, missing/invalid inputs, dataset validation and c
 **Limitations.** The data comes from Indian e-commerce sites (style and vocabulary may not transfer); Household is the largest class (imbalance); only four coarse categories; some descriptions are ambiguous or mislabelled, which limits the achievable score; TF-IDF cannot capture meaning, synonyms or unseen words; hyper-parameters are untuned and the final comparison uses a single split; 45% of the raw rows were exact duplicates and had to be removed, so the usable dataset is much smaller than the raw file suggests.
 
 **Future improvements.** Tune `C`, `alpha`, n-gram range and vocabulary size with cross-validation; try `class_weight="balanced"` and character n-grams; as an *optional extension* (not a substitute for TF-IDF) try Word2Vec/sentence embeddings or a fine-tuned transformer; study misclassified products for label noise; evaluate on an independent dataset.
+
+
+## Submission 2: Word Embeddings (GloVe)
+This section extends the project by moving from TF-IDF to dense semantic representations using Pretrained GloVe embeddings (`glove.6B.100d`).
+
+### Implemented Approaches:
+1. **GloVe Frozen (Feature Extraction):** Using pretrained word vectors as static features fed into a GlobalAveragePooling1D and a Dense classifier.
+2. **GloVe Fine-Tuned:** Unfreezing the embedding layer to allow the model to update and adapt the pretrained GloVe weights specifically for our e-commerce vocabulary.
+
+### New Deliverables:
+* `notebooks/ecommerce_embeddings.ipynb`: A complete, step-by-step notebook training and evaluating the embedding models.
+* `src/embeddings.py`: The script handling GloVe downloading, vocabulary building, and Keras model architecture.
