@@ -74,3 +74,21 @@ GITHUB_MIRROR_URL = (
     "https://raw.githubusercontent.com/sugatagh/E-commerce-Text-Classification/"
     "main/Dataset/ecommerceDataset.csv"
 )
+
+# --------------------------------------------------------------------------- #
+# Submission 2: GloVe word embeddings
+# --------------------------------------------------------------------------- #
+GLOVE_DIR = DATA_DIR / "glove"
+GLOVE_FILENAME = "glove.6B.100d.txt"
+EMBEDDING_DIM = 100
+GLOVE_URLS = [
+    ("https://github.com/RaRe-Technologies/gensim-data/releases/download/"
+     "glove-wiki-gigaword-100/glove-wiki-gigaword-100.gz", "gz"),
+    ("https://nlp.stanford.edu/data/glove.6B.zip", "zip"),
+]
+
+MAX_WORDS = 20_000
+MAX_LEN = 150
+EPOCHS = 10
+BATCH_SIZE = 64
+LEARNING_RATE = 0.003

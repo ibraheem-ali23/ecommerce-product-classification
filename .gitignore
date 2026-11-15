@@ -20,3 +20,5 @@ data/*.part
 Thumbs.db
 .vscode/
 .idea/
+data/glove/
+
